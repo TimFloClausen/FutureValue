@@ -15,18 +15,77 @@ def press_enter():
 
 def MSCI_World():
     a_rent = 0.08
-    monthly_or_once = input("Do you want to invest monthly or just once? Enter 1 = monthly 2 = one-time.")
+    monthly_or_once = input("Do you want to invest monthly or just once? Enter 1 = monthly 2 = one-time: ")
     investment = float(input("Enter how much money you want to invest! "))
-    years = float(input("How many years do you want to invest? "))
-    if monthly_or_once == 1:
-        investment = a_rent /12
-        years = years * 12
-        for month in range(years):
-            investment = investment * (1 + investment)
-            investment += years
-        print("The value in "years" years is:", round(investment, 2))
+    years = int(input("How many years do you want to invest? "))
+
+    if monthly_or_once == "1":
+        monthly_rate = a_rent / 12
+        months = years * 12
+        total = 0.0
+
+        for month in range(months):
+            total = total * (1 + monthly_rate)
+            total += investment
+            
+        print(f"The value in {years} years is: {round(total, 2)}")
+
+    elif monthly_or_once == "2":
+        total = investment
+        for i in range(years):
+            total = total * (1 + a_rent)
+            
+        print(f"The value in {years} years is: {round(total, 2)}")
 
 
+
+def SP_500():
+    a_rent = 0.10
+    monthly_or_once = input("Do you want to invest monthly or just once? Enter 1 = monthly 2 = one-time: ")
+    investment = float(input("Enter how much money you want to invest! "))
+    years = int(input("How many years do you want to invest? "))
+
+    if monthly_or_once == "1":
+        monthly_rate = a_rent / 12
+        months = years * 12
+        total = 0.0
+
+        for month in range(months):
+            total = total * (1 + monthly_rate)
+            total += investment
+            
+        print(f"The value in {years} years is: {round(total, 2)}")
+
+    elif monthly_or_once == "2":
+        total = investment
+        for i in range(years):
+            total = total * (1 + a_rent)
+            
+        print(f"The value in {years} years is: {round(total, 2)}")
+
+def Bank_Savings():
+    a_rent = float(input("Enter your annual rent available in your bank account! "))
+    monthly_or_once = input("Do you want to invest monthly or just once? Enter 1 = monthly 2 = one-time: ")
+    investment = float(input("Enter how much money you want to invest! "))
+    years = int(input("How many years do you want to invest? "))
+
+    if monthly_or_once == "1":
+        monthly_rate = a_rent / 12
+        months = years * 12
+        total = 0.0
+
+        for month in range(months):
+            total = total * (1 + monthly_rate)
+            total += investment
+            
+        print(f"The value in {years} years is: {round(total, 2)}")
+
+    elif monthly_or_once == "2":
+        total = investment
+        for i in range(years):
+            total = total * (1 + a_rent)
+            
+        print(f"The value in {years} years is: {round(total, 2)}")
 
 
     
@@ -57,5 +116,5 @@ Please enter your choice:
 
 print(intro)
 press_enter()
-print("test")
+
 
