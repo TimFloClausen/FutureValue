@@ -1,8 +1,4 @@
 
-import math
-
-monthly = 0
-
 with open("starttxt.txt", "r", encoding="utf-8") as file:
     intro = file.read()
 
@@ -90,8 +86,6 @@ def Bank_Savings():
 
     
 
-    
-
 
 def investment_type_request():
     ITR = input("""Which investment method do you want to calculate?
@@ -102,11 +96,11 @@ def investment_type_request():
 
 Please enter your choice:
 """)
-    if ITR == 1:
+    if ITR == "1":
         MSCI_World()
-    elif ITR == 2:
+    elif ITR == "2":
         SP_500()
-    elif ITR == 3:
+    elif ITR == "3":
         Bank_Savings()
     else:
         print("Error: Wrong input!")
@@ -116,5 +110,9 @@ Please enter your choice:
 
 print(intro)
 press_enter()
+print("Let's start with your calculation...")
+press_enter()
+
+investment_type_request()
 
 
