@@ -3,6 +3,10 @@ with open("starttxt.txt", "r", encoding="utf-8") as file:
     intro = file.read()
 
 
+with open("sources.txt", "r", encoding="utf-8") as file:
+    sources = file.read()
+
+
 
 def press_enter():
     input()
@@ -93,6 +97,7 @@ def investment_type_request():
 1. MSCI World
 2. S&P 500
 3. Bank Savings
+4. Show Sources
 
 Please enter your choice:
 """)
@@ -102,6 +107,8 @@ Please enter your choice:
         SP_500()
     elif ITR == "3":
         Bank_Savings()
+    elif ITR == "4":
+        print(sources)
     else:
         print("Error: Wrong input!")
         

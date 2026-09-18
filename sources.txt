@@ -1,10 +1,26 @@
-Sources/Tutoirla I used for coding the programm:
+SOURCES
 
-https://stackoverflow.com/questions/18256363/how-do-i-print-the-content-of-a-txt-file-in-python
+1. Stack Overflow – How do I print the content of a .txt file in Python?
+   Used for: Learning how to read and print the contents of a .txt file in Python.
+   https://stackoverflow.com/questions/18256363/how-do-i-print-the-content-of-a-txt-file-in-python
 
-https://www.youtube.com/watch?v=3DvHv4xGzw4
+2. YouTube – Python tutorial
+   Used for: Learning how to calculate an investment with an annual return in Python.
+   This was the basis for how the calculation works.
+   https://www.youtube.com/watch?v=3DvHv4xGzw4
 
-https://www.reddit.com/r/learnpython/comments/fd0l1c/calling_a_function_within_a_function/
+3. Reddit – r/learnpython – Calling a function within a function?
+   Used for: Understanding how functions can call other functions in Python and what to consider when doing so.
+   https://www.reddit.com/r/learnpython/comments/fd0l1c/calling_a_function_within_a_function/
 
-https://share.gemini.google/akU6ksc55Hek 
+4. Google Gemini
+   Used for: Adapting the code from Source 2 so that it works with monthly investments, as well as getting help with debugging, fixing errors, and adapting parts of the code.
+   https://share.gemini.google/akU6ksc55Hek
 
+5. Curvo – MSCI World Backtest
+   Used for: Checking the historical annual return of the MSCI World. For the calculation.
+   https://curvo.eu/backtest/de/markt-index/msci-world?currency=eur
+
+Investopedia – What Is the Average Annual Return of the S&P 500?
+Used for: Checking the historical average annual return of the S&P 500. For the calculation.
+https://www.investopedia.com/ask/answers/042415/what-average-annual-return-sp-500.asp
