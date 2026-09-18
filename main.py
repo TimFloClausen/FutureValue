@@ -12,3 +12,5 @@ def press_enter():
 print(intro)
 press_enter()
 print("test")
+
+chose
