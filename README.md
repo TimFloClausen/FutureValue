@@ -81,6 +81,6 @@ This program is **not financial advice** and should not be used as the basis for
 
 ## About the Project
 
-I created FutureValue as a personal **application project for an apprenticeship** to practice programming while exploring mathematical concepts such as **compound interest, investment growth and recurring contributions**.
+I created FutureValue as a personal project to demonstrate my programming skills in a practical application for applying to an apprenticeship* to practice programming while exploring mathematical concepts such as **compound interest, investment growth and recurring contributions**.
 
 The goal was to build a small application that combines something I enjoy — **programming and mathematics** — with a practical use case related to the financial sector.

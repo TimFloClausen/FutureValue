@@ -21,6 +21,10 @@ SOURCES
    Used for: Checking the historical annual return of the MSCI World. For the calculation.
    https://curvo.eu/backtest/de/markt-index/msci-world?currency=eur
 
-Investopedia – What Is the Average Annual Return of the S&P 500?
+6.Investopedia – What Is the Average Annual Return of the S&P 500?
 Used for: Checking the historical average annual return of the S&P 500. For the calculation.
 https://www.investopedia.com/ask/answers/042415/what-average-annual-return-sp-500.asp
+
+7. Backtest by Curvo - Historische Wertentwicklung des DAX Index
+Used for: Checking the historical average annual return of the DAX 40. For the calculation.
+https://curvo.eu/backtest/de/markt-index/dax?currency=eur
