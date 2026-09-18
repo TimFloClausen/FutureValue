@@ -3,3 +3,7 @@ Sources/Tutoirla I used for coding the programm:
 https://stackoverflow.com/questions/18256363/how-do-i-print-the-content-of-a-txt-file-in-python
 
 https://www.youtube.com/watch?v=3DvHv4xGzw4
+
+https://www.reddit.com/r/learnpython/comments/fd0l1c/calling_a_function_within_a_function/
+
+
