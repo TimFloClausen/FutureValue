@@ -17,6 +17,15 @@ def press_enter():
     input()
 
 
+def Q():
+    Q = input("Do you want to quit the programm? Y/n ")
+    if break == "Y":
+        print("You quit the programm! Goodbye!" )
+        quit
+    else:
+        print("Decline")
+
+
 
 def ETF():
         global a_rent
@@ -31,17 +40,22 @@ def ETF():
     
             for month in range(months):
                 total = total * (1 + monthly_rate)
-                total += investment  
-                
+                total += investment
+
+            only_annuel_rent_profit = investment 
+
             print(f"The value in {years} years is: {round(total, 2)}")
     
         elif monthly_or_once == "2":
             total = investment
             for i in range(years):
                 total = total * (1 + a_rent)
+
+
             print("AR is:")
             print(a_rent)  
             print(f"The value in {years} years is: {round(total, 2)}")
+            Q()
 
 
 
@@ -78,35 +92,42 @@ def Bank_Savings():
 
 def investment_type_request():
     global a_rent
-    ITR = input("""Which investment method do you want to calculate?
+    while True:
+        ITR = input("""Which investment method do you want to calculate?
 
-1. MSCI World
-2. S&P 500
-3. Bank Savings
-4. Dax 40
-5. SMI
-6. Show Sources
+        1. MSCI World
+        2. S&P 500
+        3. Bank Savings
+        4. Dax 40
+        5. SMI
+        6. Compare Investment Methods
+        7. Show Sources
 
-Please enter your choice:
-""")  
-    if ITR == "1":
-        a_rent = 0.08 
-        ETF()
-    elif ITR == "2":
-        a_rent = 0.10
-        ETF()
-    elif ITR == "3":
-        Bank_Savings()
-    elif ITR == "4":
-        a_rent = 0.07
-        ETF()
-    elif ITR == "5":
-        a_rent = 0.06
-        ETF()
-    elif ITR == "6":
-        print(sources)
-    else:
-        print("Error: Wrong input!")
+        Please enter your choice:
+        """)  
+        if ITR == "1":
+            a_rent = 0.08 
+            ETF()
+    
+        elif ITR == "2":
+            a_rent = 0.10
+            ETF()
+        elif ITR == "3":
+            Bank_Savings()
+        elif ITR == "4":
+            a_rent = 0.07
+            ETF()
+        elif ITR == "5":
+            a_rent = 0.06
+            ETF()
+        elif ITR == "6":
+            print(sources)
+        elif ITR == "7":
+            print(sources)
+    
+        else:
+            print("Error: Wrong input!")
+            
         
 
   
