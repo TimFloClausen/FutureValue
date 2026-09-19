@@ -1,7 +1,6 @@
 
 a_rent = 0
 
-
 with open("starttxt.txt", "r", encoding="utf-8") as file:
     intro = file.read()
 
@@ -40,6 +39,7 @@ def ETF():
             total = investment
             for i in range(years):
                 total = total * (1 + a_rent)
+            print("AR is:")
             print(a_rent)  
             print(f"The value in {years} years is: {round(total, 2)}")
 
@@ -78,35 +78,36 @@ def Bank_Savings():
 
 def investment_type_request():
     global a_rent
-
     ITR = input("""Which investment method do you want to calculate?
 
 1. MSCI World
 2. S&P 500
 3. Bank Savings
 4. Dax 40
-5. Show Sources
+5. SMI
+6. Show Sources
 
 Please enter your choice:
 """)  
     if ITR == "1":
-        a_rent += 0.08 
-    
-        
-
+        a_rent = 0.08 
+        ETF()
     elif ITR == "2":
-        SP_500()
-        return
+        a_rent = 0.10
+        ETF()
     elif ITR == "3":
         Bank_Savings()
     elif ITR == "4":
-        Dax()
+        a_rent = 0.07
+        ETF()
     elif ITR == "5":
-        SMI()
-    elif ITR == "Q":
+        a_rent = 0.06
+        ETF()
+    elif ITR == "6":
         print(sources)
     else:
         print("Error: Wrong input!")
+        
 
   
 
@@ -119,6 +120,5 @@ press_enter()
 
 investment_type_request()
 
-ETF()
 
 
