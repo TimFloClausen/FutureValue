@@ -45,13 +45,16 @@ def ETF():
             
 
             print(f"The value in {years} years is: {round(total, 2)}")
+            Q()
     
         elif monthly_or_once == "2":
             total = investment
+
+            only_annuel_rent_profit = investment * (1 + a_rent ** years) - investment
             for i in range(years):
                 total = total * (1 + a_rent)
 
-            only_annuel_rent_profit = investment * (1 + a_rent) *10 - investment
+            
 
 
             print("AR is:")
@@ -78,17 +81,18 @@ def Bank_Savings():
             total += investment 
             
         print(f"The value in {years} years is: {round(total, 2)}")
+        Q()
 
     elif monthly_or_once == "2":
         total = investment
         for i in range(years):
             total = total * (1 + a_rentb)
 
-            only_annuel_rent_profit = total * (1 + a_rent)
-            only_annuel_rent_profit = - investment 
+        
 
         print(f"The value you made only from annual returns in {years} years is: {round(only_annuel_rent_profit, 2)}")
         print(f"The value in {years} years is: {round(total, 2)}")
+        Q()
 
 
 
