@@ -1,4 +1,7 @@
 
+a_rent = 0
+
+
 with open("starttxt.txt", "r", encoding="utf-8") as file:
     intro = file.read()
 
@@ -6,7 +9,8 @@ with open("starttxt.txt", "r", encoding="utf-8") as file:
 with open("sources.txt", "r", encoding="utf-8") as file:
     sources = file.read()
 
-a_rent = 0
+
+
 
 
 
@@ -16,7 +20,7 @@ def press_enter():
 
 
 def ETF():
-        a_rent = ""
+        a_rent = 0
         monthly_or_once = input("Do you want to invest monthly or just once? Enter 1 = monthly 2 = one-time: ")
         investment = float(input("Enter how much money you want to invest! "))
         years = int(input("How many years do you want to invest? "))
@@ -28,7 +32,7 @@ def ETF():
     
             for month in range(months):
                 total = total * (1 + monthly_rate)
-                total += investment
+                total += investment  
                 
             print(f"The value in {years} years is: {round(total, 2)}")
     
@@ -82,12 +86,15 @@ def investment_type_request():
 5. Show Sources
 
 Please enter your choice:
-""")
+""")  
     if ITR == "1":
-        a_rent == 0.08
+        global a_rent
+        a_rent == a_rent + 0.08
         ETF()
+
     elif ITR == "2":
         SP_500()
+        return
     elif ITR == "3":
         Bank_Savings()
     elif ITR == "4":
