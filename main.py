@@ -20,7 +20,7 @@ def press_enter():
 
 
 def ETF():
-        a_rent = 0
+        global a_rent
         monthly_or_once = input("Do you want to invest monthly or just once? Enter 1 = monthly 2 = one-time: ")
         investment = float(input("Enter how much money you want to invest! "))
         years = int(input("How many years do you want to invest? "))
@@ -40,20 +40,20 @@ def ETF():
             total = investment
             for i in range(years):
                 total = total * (1 + a_rent)
-                
+            print(a_rent)  
             print(f"The value in {years} years is: {round(total, 2)}")
 
 
 
 
 def Bank_Savings():
-    a_rent = float(input("Enter your annual rent available in your bank account! "))
+    a_rentb = float(input("Enter your annual rent available in your bank account! "))
     monthly_or_once = input("Do you want to invest monthly or just once? Enter 1 = monthly 2 = one-time: ")
     investment = float(input("Enter how much money you want to invest! "))
     years = int(input("How many years do you want to invest? "))
 
     if monthly_or_once == "1":
-        monthly_rate = a_rent / 12
+        monthly_rate = a_rentb / 12
         months = years * 12
         total = 0.0
 
@@ -66,8 +66,8 @@ def Bank_Savings():
     elif monthly_or_once == "2":
         total = investment
         for i in range(years):
-            total = total * (1 + a_rent)
-            
+            total = total * (1 + a_rentb)
+ 
         print(f"The value in {years} years is: {round(total, 2)}")
 
 
@@ -77,6 +77,8 @@ def Bank_Savings():
 
 
 def investment_type_request():
+    global a_rent
+
     ITR = input("""Which investment method do you want to calculate?
 
 1. MSCI World
@@ -88,9 +90,9 @@ def investment_type_request():
 Please enter your choice:
 """)  
     if ITR == "1":
-        global a_rent
-        a_rent == a_rent + 0.08
-        ETF()
+        a_rent += 0.08 
+    
+        
 
     elif ITR == "2":
         SP_500()
@@ -105,7 +107,8 @@ Please enter your choice:
         print(sources)
     else:
         print("Error: Wrong input!")
-        
+
+  
 
 
 
@@ -115,5 +118,7 @@ print("Let's start with your calculation...")
 press_enter()
 
 investment_type_request()
+
+ETF()
 
 
