@@ -28,3 +28,7 @@ https://www.investopedia.com/ask/answers/042415/what-average-annual-return-sp-50
 7. Backtest by Curvo - Historische Wertentwicklung des DAX Index
 Used for: Checking the historical average annual return of the DAX 40. For the calculation.
 https://curvo.eu/backtest/de/markt-index/dax?currency=eur
+
+6. Moneyland – Wie gut rentieren Schweizer Aktien?
+Used for: Adding the SMI as an investment type and providing the historical annual return used for the calculation.
+www.moneyland.ch/de/wie-gut-rentieren-schweizer-aktien-historisch 

@@ -76,7 +76,7 @@ def Bank_Savings():
 
         for month in range(months):
             total = total * (1 + monthly_rate)
-            total += investment
+            total += investment 
             
         print(f"The value in {years} years is: {round(total, 2)}")
 
@@ -112,6 +112,31 @@ def Dax():
             print(f"The value in {years} years is: {round(total, 2)}")
 
 
+def SMI():
+    a_rent = 0.06
+    monthly_or_once = input("Do you want to invest monthly or just once? Enter 1 = monthly 2 = one-time: ")
+    investment = float(input("Enter how much money you want to invest! "))
+    years = int(input("How many years do you want to invest? "))
+
+    if monthly_or_once == "1":
+        monthly_rate = a_rent / 12
+        months = years * 12
+        total = 0.0
+
+        for month in range(months):
+            total = total * (1 + monthly_rate)
+            total += investment
+            
+        print(f"The value in {years} years is: {round(total, 2)}")
+
+    elif monthly_or_once == "2":
+        total = investment
+        for i in range(years):
+            total = total * (1 + a_rent)
+            
+        print(f"The value in {years} years is: {round(total, 2)}")
+
+
 
     
 
@@ -135,6 +160,8 @@ Please enter your choice:
         Bank_Savings()
     elif ITR == "4":
         Dax()
+    elif ITR == "5":
+        SMI()
     elif ITR == "Q":
         print(sources)
     else:
