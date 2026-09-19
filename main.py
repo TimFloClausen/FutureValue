@@ -138,7 +138,6 @@ def SMI():
 
 
 
-    
 
 
 def investment_type_request():
