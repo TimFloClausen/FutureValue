@@ -19,7 +19,7 @@ def press_enter():
 
 def Q():
     Q = input("Do you want to quit the programm? Y/n ")
-    if break == "Y":
+    if  Q == "Y":
         print("You quit the programm! Goodbye!" )
         quit
     else:
@@ -42,7 +42,7 @@ def ETF():
                 total = total * (1 + monthly_rate)
                 total += investment
 
-            only_annuel_rent_profit = investment 
+            
 
             print(f"The value in {years} years is: {round(total, 2)}")
     
@@ -51,9 +51,11 @@ def ETF():
             for i in range(years):
                 total = total * (1 + a_rent)
 
+            only_annuel_rent_profit = investment * (1 + a_rent) *10 - investment
+
 
             print("AR is:")
-            print(a_rent)  
+            print(only_annuel_rent_profit)  
             print(f"The value in {years} years is: {round(total, 2)}")
             Q()
 
@@ -81,7 +83,11 @@ def Bank_Savings():
         total = investment
         for i in range(years):
             total = total * (1 + a_rentb)
- 
+
+            only_annuel_rent_profit = total * (1 + a_rent)
+            only_annuel_rent_profit = - investment 
+
+        print(f"The value you made only from annual returns in {years} years is: {round(only_annuel_rent_profit, 2)}")
         print(f"The value in {years} years is: {round(total, 2)}")
 
 
