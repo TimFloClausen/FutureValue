@@ -37,28 +37,34 @@ def ETF():
             monthly_rate = a_rent / 12
             months = years * 12
             total = 0.0
+            
     
             for month in range(months):
                 total = total * (1 + monthly_rate)
                 total += investment
 
-            
+            all_monthly_investment = investment * months
 
+            only_annuel_rent_profit = total - all_monthly_investment
+
+            
+            print(f"The value you made only from annual returns in {years} years is: {round(only_annuel_rent_profit, 2)}")
             print(f"The value in {years} years is: {round(total, 2)}")
             Q()
     
         elif monthly_or_once == "2":
             total = investment
 
-            only_annuel_rent_profit = investment * (1 + a_rent ** years) - investment
+    
             for i in range(years):
                 total = total * (1 + a_rent)
+
+            only_annuel_rent_profit = total - investment
 
             
 
 
-            print("AR is:")
-            print(only_annuel_rent_profit)  
+            print(f"The value you made only from annual returns in {years} years is: {round(only_annuel_rent_profit, 2)}") 
             print(f"The value in {years} years is: {round(total, 2)}")
             Q()
 
@@ -70,25 +76,24 @@ def Bank_Savings():
     monthly_or_once = input("Do you want to invest monthly or just once? Enter 1 = monthly 2 = one-time: ")
     investment = float(input("Enter how much money you want to invest! "))
     years = int(input("How many years do you want to invest? "))
-    a_rentb = a_rentb /100
-    ab = a_rentb + 1
-    m = years * 12
-    a_rentm = a_rent / 12
-    all_investment = investment * m
-
+    
 
 
     if monthly_or_once == "1":
         monthly_rate = a_rentb / 12
         months = years * 12
         total = 0.0
+        all_monthly_investment = investment * months
 
 
 
         for month in range(months):
             total = total * (1 + monthly_rate)
-            total += investment 
-            
+            total += investment
+
+        only_annuel_rent_profit = total - all_monthly_investment
+
+        print(f"The value you made only from annual returns in {years} years is: {round(only_annuel_rent_profit, 2)}")   
         print(f"The value in {years} years is: {round(total, 2)}")
         Q()
 
@@ -99,6 +104,8 @@ def Bank_Savings():
 
         for i in range(years):
             total = total * (1 + a_rentb)
+
+        only_annuel_rent_profit = total - investment
 
         
 
