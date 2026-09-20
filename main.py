@@ -70,6 +70,9 @@ def Bank_Savings():
     monthly_or_once = input("Do you want to invest monthly or just once? Enter 1 = monthly 2 = one-time: ")
     investment = float(input("Enter how much money you want to invest! "))
     years = int(input("How many years do you want to invest? "))
+    a_rentb = a_rentb /100
+    ab = a_rentb + 1
+
 
     if monthly_or_once == "1":
         monthly_rate = a_rentb / 12
@@ -85,6 +88,9 @@ def Bank_Savings():
 
     elif monthly_or_once == "2":
         total = investment
+
+        only_annuel_rent_profit = investment * (ab ** years) - investment
+
         for i in range(years):
             total = total * (1 + a_rentb)
 
