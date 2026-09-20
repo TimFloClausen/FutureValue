@@ -18,10 +18,12 @@ With FutureValue, you can:
 
 ## Investment Methods
 
-FutureValue currently includes three different methods:
+FutureValue currently includes five different methods:
 
 * **MSCI World** – based on an assumed annual return
 * **S&P 500** – based on an assumed annual return
+* **Dax 40** - based on an assumed annual interest rat
+* **SMI** based on an assumed annual interest rat
 * **Bank Savings** – based on an assumed annual interest rate
 
 The returns and interest rates used by the program are assumptions for the calculation. They do **not** represent guaranteed or predicted future returns.
@@ -36,9 +38,13 @@ For monthly contributions, the program calculates the development month by month
 
 For example, you could enter:
 
+For example, you could enter:
+
 ```text
 Initial investment:    CHF 1,000
+or
 Monthly contribution:  CHF 200
+
 Investment period:     10 years
 Annual return:         5 %
 ```
