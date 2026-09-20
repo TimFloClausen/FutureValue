@@ -72,12 +72,18 @@ def Bank_Savings():
     years = int(input("How many years do you want to invest? "))
     a_rentb = a_rentb /100
     ab = a_rentb + 1
+    m = years * 12
+    a_rentm = a_rent / 12
+    all_investment = investment * m
+
 
 
     if monthly_or_once == "1":
         monthly_rate = a_rentb / 12
         months = years * 12
         total = 0.0
+
+
 
         for month in range(months):
             total = total * (1 + monthly_rate)
@@ -89,10 +95,12 @@ def Bank_Savings():
     elif monthly_or_once == "2":
         total = investment
 
-        only_annuel_rent_profit = investment * (ab ** years) - investment
+        
 
         for i in range(years):
             total = total * (1 + a_rentb)
+
+        
 
         
 
