@@ -1,4 +1,3 @@
-
 a_rent = 0
 
 with open("starttxt.txt", "r", encoding="utf-8") as file:
@@ -22,9 +21,12 @@ def Q():
         Q = input("Do you want to quit the programm? Y/n ").upper()
         if  Q == "Y":
             print("You quit the programm! Goodbye!" )
-            break
+            quit()
+        elif Q == "n":
+            return
         else:
-            print("Decline")
+            print("Please enter Y or N.")
+
 
 
 def compare_investment_methods():
@@ -64,7 +66,7 @@ def compare_investment_methods():
                 Result_of = f"Result of banking by an annual rent of {a_rentb}%:"
 
             elif c == 6:
-                quit()
+                return
 
             c += 1
 
@@ -188,14 +190,15 @@ def ETF():
 
 def Bank_Savings():
     a_rentb = float(input("Enter your annual rent available in your bank account! "))
+
     monthly_or_once = input("Do you want to invest monthly or just once? Enter 1 = monthly 2 = one-time: ")
     investment = float(input("Enter how much money you want to invest! "))
     years = int(input("How many years do you want to invest? "))
-    
 
 
     if monthly_or_once == "1":
-        monthly_rate = a_rentb / 12
+        monthly_rate = a_rentb / 100
+        monthly_rate / 12
         months = years * 12
         total = 0.0
         all_monthly_investment = investment * months
@@ -213,12 +216,14 @@ def Bank_Savings():
         Q()
 
     elif monthly_or_once == "2":
+        a_rentb += 1
+        a_rentb /= 100
         total = investment
 
         
 
         for i in range(years):
-            total = total * (1 + a_rentb)
+            total = total * a_rentb
 
         only_annuel_rent_profit = total - investment
 
@@ -275,6 +280,7 @@ def investment_type_request():
     
         else:
             print("Error: Wrong input!")
+
             
         
 
@@ -284,10 +290,5 @@ def investment_type_request():
 
 print(intro)
 press_enter()
-print("Let's start with your calculation...")
-press_enter()
 
 investment_type_request()
-
-
-

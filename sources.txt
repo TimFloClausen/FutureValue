@@ -21,18 +21,24 @@ SOURCES
    Used for: Checking the historical annual return of the MSCI World. For the calculation.
    https://curvo.eu/backtest/de/markt-index/msci-world?currency=eur
 
-6.Investopedia – What Is the Average Annual Return of the S&P 500?
-Used for: Checking the historical average annual return of the S&P 500. For the calculation.
-https://www.investopedia.com/ask/answers/042415/what-average-annual-return-sp-500.asp
+6. Investopedia – What Is the Average Annual Return of the S&P 500?
+   Used for: Checking the historical average annual return of the S&P 500. For the calculation.
+   https://www.investopedia.com/ask/answers/042415/what-average-annual-return-sp-500.asp
 
 7. Backtest by Curvo - Historische Wertentwicklung des DAX Index
-Used for: Checking the historical average annual return of the DAX 40. For the calculation.
-https://curvo.eu/backtest/de/markt-index/dax?currency=eur
+   Used for: Checking the historical average annual return of the DAX 40. For the calculation.
+   https://curvo.eu/backtest/de/markt-index/dax?currency=eur
 
 6. Moneyland – Wie gut rentieren Schweizer Aktien?
-Used for: Adding the SMI as an investment type and providing the historical annual return used for the calculation.
-www.moneyland.ch/de/wie-gut-rentieren-schweizer-aktien-historisch 
+   Used for: Adding the SMI as an investment type and providing the historical annual return used for the calculation.
+   www.moneyland.ch/de/wie-gut-rentieren-schweizer-aktien-historisch 
 
-7. stackoverflow - How to change the value of a variable inside an if-statment and apply in all in python
-Used for: To figure out how to change the value of a variable inside a function and use it in a other function.
-https://stackoverflow.com/questions/56166288/how-to-change-the-value-of-a-variable-inside-an-if-statment-and-apply-in-all-in?utm_source=chatgpt.com
+7. Stack Overflow - How to change the value of a variable inside an if-statment and apply in all in python
+   Used for: To figure out how to change the value of a variable inside a function and use it in a other function.
+   https://stackoverflow.com/questions/56166288/how-to-change-the-value-of-a-variable-inside-an-if-statment-and-apply-in-all-in?utm_source=chatgpt.com
+
+8. Wikipedia.de - Zinseszins
+   Used for: Finding two formulas for calculating the value of the annual return.
+   I did not use the two formulas directly in the code because they were not necessary.
+   However, I used the basic principle behind them: subtracting the amount of money invested from the final value to calculate how much money was gained from the annual return alone.
+   https://de.wikipedia.org/wiki/Zinseszins
