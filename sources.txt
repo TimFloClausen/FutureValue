@@ -1,4 +1,5 @@
-SOURCES
+Some of the SOURCES I used for making this programm.
+
 
 1. Stack Overflow – How do I print the content of a .txt file in Python?
    Used for: Learning how to read and print the contents of a .txt file in Python.
@@ -42,3 +43,7 @@ SOURCES
    I did not use the two formulas directly in the code because they were not necessary.
    However, I used the basic principle behind them: subtracting the amount of money invested from the final value to calculate how much money was gained from the annual return alone.
    https://de.wikipedia.org/wiki/Zinseszins
+
+9. DataCamp – Python User Input: Handling, Validation, and Best Practices  
+   Used for: Finding out how to handle invalid user input and how to validate user input. I then told Copilot how I wanted the code to be implemented.  
+   https://www.datacamp.com/tutorial/python-user-input

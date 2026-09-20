@@ -1,16 +1,18 @@
+# Global variable for calculating the annual return
 a_rent = 0
 
+# Opens the two .txt files and reads their content
 with open("starttxt.txt", "r", encoding="utf-8") as file:
     intro = file.read()
 
 with open("sources.txt", "r", encoding="utf-8") as file:
     sources = file.read()
 
-
+# Function that requires the user to press Enter
 def press_enter():
     input()
 
-
+# Function that lets the user choose if they want to end the program
 def Q():
     while True:
         Q = input("Do you want to quit the programm? Y/n ").upper()
@@ -22,7 +24,7 @@ def Q():
         else:
             print("Please enter Y or N.")
 
-
+# Function that lets the user compare all five different investment types
 def compare_investment_methods():
     while True:
         try:
@@ -119,7 +121,7 @@ def compare_investment_methods():
 
         c += 1
 
-
+# Calculation for the ETFs
 def ETF():
     global a_rent
 
@@ -159,6 +161,7 @@ def ETF():
             total = total * (1 + monthly_rate)
             total += investment
 
+        # Calculates how much money was gained only from the annual return
         all_monthly_investment = investment * months
         only_annuel_rent_profit = total - all_monthly_investment
 
@@ -175,6 +178,7 @@ def ETF():
         for i in range(years):
             total = total * (1 + a_rent)
 
+        # Calculates how much money was gained only from the annual return
         only_annuel_rent_profit = total - investment
 
         print(
@@ -184,7 +188,7 @@ def ETF():
         print(f"The value in {years} years is: {round(total, 2)}")
         Q()
 
-
+# Bank savings function that lets the user set their custom annual return from their bank account
 def Bank_Savings():
     while True:
         try:
@@ -223,7 +227,7 @@ def Bank_Savings():
             break
         except ValueError:
             print("Please enter a valid positive whole number.")
-
+    
     annual_rate = a_rentb / 100
 
     if monthly_or_once == "1":
@@ -236,6 +240,7 @@ def Bank_Savings():
             total = total * (1 + monthly_rate)
             total += investment
 
+        # Calculates how much money was gained only from the annual return
         only_annuel_rent_profit = total - all_monthly_investment
 
         print(
@@ -251,6 +256,7 @@ def Bank_Savings():
         for i in range(years):
             total = total * (1 + annual_rate)
 
+        # Calculates how much money was gained only from the annual return
         only_annuel_rent_profit = total - investment
 
         print(
@@ -260,7 +266,7 @@ def Bank_Savings():
         print(f"The value in {years} years is: {round(total, 2)}")
         Q()
 
-
+# Menu that lets the user choose between different things the program can do
 def investment_type_request():
     global a_rent
 
@@ -305,7 +311,7 @@ def investment_type_request():
         else:
             print("Error: Wrong input!")
 
-
+# Start of the program
 print(intro)
 press_enter()
 
