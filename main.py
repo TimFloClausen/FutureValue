@@ -15,9 +15,9 @@ def press_enter():
 # Function that lets the user choose if they want to end the program
 def Q():
     while True:
-        Q = input("Do you want to quit the programm? Y/n ").upper()
+        Q = input("Do you want to quit the program? Y/n ").upper()
         if Q == "Y":
-            print("You quit the programm! Goodbye!")
+            print("You quit the program! Goodbye!")
             return True
         elif Q == "N":
             return False
@@ -306,7 +306,7 @@ def investment_type_request():
         elif ITR == "7":
             print(sources)
         elif ITR == "8":
-            print("You quit the programm! Goodbye!")
+            print("You quit the program! Goodbye!")
             return
         else:
             print("Error: Wrong input!")
