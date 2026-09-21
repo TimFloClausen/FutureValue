@@ -22,8 +22,8 @@ FutureValue currently includes five different methods:
 
 * **MSCI World** – based on an assumed annual return
 * **S&P 500** – based on an assumed annual return
-* **Dax 40** - based on an assumed annual interest rat
-* **SMI** based on an assumed annual interest rat
+* **Dax 40** – based on an assumed annual interest rate
+* **SMI** – based on an assumed annual interest rate
 * **Bank Savings** – based on an assumed annual interest rate
 
 The returns and interest rates used by the program are assumptions for the calculation. They do **not** represent guaranteed or predicted future returns.
@@ -36,9 +36,7 @@ For monthly contributions, the program calculates the development month by month
 
 ## Example
 
-For example, you could enter:
-
-For example, you could enter:
+You could enter:
 
 ```text
 Initial investment:    CHF 1,000
@@ -59,7 +57,7 @@ FutureValue then calculates how the investment could develop over the selected p
 * Loops
 * User input
 * Data processing
-* Different tutorials and sources (see `Sources.txt`)
+* Different tutorials and sources (see `sources.txt`)
 
 ## Installation
 
@@ -87,6 +85,6 @@ This program is **not financial advice** and should not be used as the basis for
 
 ## About the Project
 
-I created FutureValue as a personal project to demonstrate my programming skills in a practical application for applying to an apprenticeship* to practice programming while exploring mathematical concepts such as **compound interest, investment growth and recurring contributions**.
+I created FutureValue as a personal project to demonstrate my programming skills in a practical application for an apprenticeship. With this project, I practice programming while exploring mathematical concepts such as **compound interest, investment growth and recurring contributions**.
 
 The goal was to build a small application that combines something I enjoy — **programming and mathematics** — with a practical use case related to the financial sector.
