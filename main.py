@@ -18,7 +18,7 @@ def Q():
         Q = input("Do you want to quit the program? Y/n ").upper()
         if Q == "Y":
             print("You quit the program! Goodbye!")
-            return True
+            raise SystemExit
         elif Q == "N":
             return False
         else:
