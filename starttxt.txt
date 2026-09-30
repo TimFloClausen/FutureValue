@@ -1,13 +1,12 @@
 # Welcome to FutureValue!
 
-FutureValue is a Python program that calculates how your money can grow over time using three different investment methods:
+FutureValue helps you project your financial growth across five scenarios:
+- **MSCI World**
+- **S&P 500**
+- **DAX**
+- **SMI**
+- **Bank Savings Account**
 
-* **MSCI World**
-* **S&P 500**
-* **Traditional bank savings**
+Choose between a **lump-sum investment** or **monthly deposits**, set your time horizon, and discover the power of **compound interest**.
 
-You can choose between a **one-time investment** and **monthly contributions**, set your investment period in years, and see how much your money could grow through the power of **compound interest**.
-
-Explore different investment scenarios and see how your savings could develop over time.
-
-**Press Enter to start!**
+**Press Enter to continue...**
